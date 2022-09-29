@@ -1,0 +1,6 @@
+{
+    "test_cases": [
+        "psu_tc",
+        "fan_tc"
+    ]
+}

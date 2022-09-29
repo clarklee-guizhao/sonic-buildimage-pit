@@ -1,0 +1,18 @@
+{
+    "firmware_version":["bmc","cpld","onie","uboot","sdk"],
+    "bmc_version":"AliBMC-odm-obmc-rj",
+    "cpld_version":{
+        "CTRL_MODULE_CPLD": "21071930",
+        "PORT_BOARD_CPLD": "21060517"
+    },
+    "onie_version":"2018.05",
+    "uboot_version":"2.14",
+    "sdk_version":"5.5.9",
+    "mac_address": {
+        "offset":{
+            "cpu_offset": 0,
+            "bmc_offset": 2
+        },
+        "check_list":["cpu", "bmc"]
+    }
+}

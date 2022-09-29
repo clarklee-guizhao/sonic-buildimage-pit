@@ -1,0 +1,17 @@
+{
+    "test_cases":[
+        "cpu_tc",
+        "memory_tc",
+        "emmc_tc",
+        "rtc_tc",
+        "fan_tc",
+        "gpio_tc",
+        "i2c_tc",
+        "mgmt_tc",
+        "oob_tc",
+        "sensor_tc",
+        "sfp_tc",
+        "usb_tc",
+        "traffic_tc"
+    ]
+}

@@ -1,0 +1,32 @@
+{% from "dockers/dockerfile-macros.j2" import install_debian_packages, install_python_wheels, copy_files %}
+FROM docker-config-engine-buster
+
+ARG docker_container_name
+RUN [ -f /etc/rsyslog.conf ] && sed -ri "s/%syslogtag%/$docker_container_name#%syslogtag%/;" /etc/rsyslog.conf
+
+## Make apt-get non-interactive
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update      && \
+    apt-get install -f -y  \
+            dmidecode
+
+RUN apt-get install -f -y python-dev python-pip
+
+{% if docker_pit_whls.strip() -%}
+# Copy locally-built Python wheel dependencies
+{{ copy_files("python-wheels/", docker_pit_whls.split(' '), "/python-wheels/") }}
+
+# Install locally-built Python wheel dependencies
+{{ install_python_wheels(docker_pit_whls.split(' ')) }}
+{% endif %}
+
+RUN apt-get clean -y      && \
+    apt-get autoclean -y  && \
+    apt-get autoremove -y && \
+    rm -rf /debs
+
+
+COPY ["supervisord.conf", "/etc/supervisor/conf.d/"]
+
+ENTRYPOINT ["/usr/local/bin/supervisord"]

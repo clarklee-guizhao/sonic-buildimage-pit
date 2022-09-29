@@ -1,0 +1,19 @@
+{
+
+    "Base MAC Address":     "88:2A:5E:C9:5B:57",
+    "ONIE Version":         "2.5.01",
+    "Platform Name":        "x86_64-h3c_s9825-64d-w1-r0",
+    "Serial Number":        "219801A34H6216V00008",
+    "Product Name":         "S9825-64D-W1-ZZY",
+    "Part Number":          "9801A34H",
+    "Manufacturer":         "H3C",
+    "Manufacture Date":     "06/22/2021 01:01:01",
+    "Manufacture Country":  "CHN",
+    "Device Version":       "8",
+    "Vendor Name":          "H3C",
+    "Diag Version":         "0.1.0.16",
+    "Service Tag":          "www.h3c.com",
+    "Label Revision":       "R01",
+    "MAC Addresses":        "5",
+    "Vendor Extension":     ""
+}

@@ -1,0 +1,66 @@
+{
+    "asic": "centec",
+    "arch": "arm64",
+    "cpu_info": {
+        "BogoMIPS":"40",
+        "CPU(s)": "2"
+    },
+    "memory_free_size": 100,
+    "emmc_bom":[
+        {
+            "manufacturer": "Toshiba",
+            "pn": "064G02"
+        }
+    ],
+    "i2c":{
+        "CTRL_CPLD" : {
+            "bus" : 2,
+            "address" : "0x0d",
+            "register" : "0x0F",
+            "flag" : "rw"
+        },
+        "PORT_CPLD" : {
+            "bus" : 3,
+            "address" : "0x30",
+            "register" : "0x0F",
+            "flag" : "rw"
+        }
+    },
+    "gpio":{
+        "gpio504":{
+            "pin":"GPIO8",
+            "net":"CTC7132_CPLD_JTAG_EN"
+        },
+        "gpio505":{
+            "pin":"GPIO9",
+            "net":"CTC7132_CPLD_JTAG_TCK_R"
+        },
+        "gpio506":{
+            "pin":"GPIO10",
+            "net":"CTC7132_CPLD_JTAG_TMS_R"
+        },
+        "gpio507":{
+            "pin":"GPIO11",
+            "net":"CTC7132_CPLD_JTAG_TDI_R"
+        },
+        "gpio508":{
+            "pin":"GPIO12",
+            "net":"CTC7132_CPLD_JTAG_TDO"
+        },
+        "gpio509":{
+            "pin":"GPIO13",
+            "net":"CTC7132_I2CEXP0_REST_N"
+        },
+        "gpio510":{
+            "pin":"GPIO14",
+            "net":"CTC7132_I2CEXP1_REST_N"
+        }
+    },
+    "jtag":["CTRL_CPLD"],
+    "server_ip": "192.168.1.100",
+    "fan_setting":{
+        "tolerance": 25,
+        "stable_time": 10,
+        "pwm_range":[5, 100]
+    }
+}

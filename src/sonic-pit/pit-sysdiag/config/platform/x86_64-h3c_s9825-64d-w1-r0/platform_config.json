@@ -1,0 +1,10 @@
+{
+    "test_cases":[
+        "tlv_eeprom_read_tc",
+        "tlv_eeprom_write_tc",
+        "replaceable_eeprom_read_tc",
+        "replaceable_eeprom_write_tc",
+        "slot_eeprom_read_tc",
+        "slot_eeprom_write_tc"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "asic": "centec",
+    "arch": "arm64",
+    "cpu_info": {
+        "BogoMIPS":"4400",
+        "CPU(s)": "8"
+    },
+    "memory_free_size": 100
+}

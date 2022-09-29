@@ -1,0 +1,30 @@
+{
+    "firmware_version":["bmc","cpld","onie","bios","fpga","sdk","switch_pcie"],
+    "bmc_version":"AliBMC-odm-obmc-rj",
+    "cpld_version":{
+        "40CCQ_CPLD_2": "21022313",
+        "40CCQ_CPLD_1": "21022314",
+        "44CCQ_CPLD_2": "21022313",
+        "CPU_BOARD_CPLD": "21102035",
+        "CPU_MODULE_CPLD": "20120713",
+        "44CCQ_CPLD_1": "21022314",
+        "MAC_BOARD_CPLD_2": "21022314",
+        "MAC_BOARD_CPLD_1": "21022315",
+        "CPU_BOARD_CPLD-FAN": "21012815"
+    },
+    "onie_version":"2018.05",
+    "bios_version":"5.14(3CNHU021A0)",
+    "fpga_version":"7a500508-20201203",
+    "sdk_version":"6.5.21",
+    "switch_pcie_version":{
+        "PCIE_FW": "D000_05",
+        "PCIE_FW_LOADER": "2.9"
+    },
+    "mac_address": {
+        "offset":{
+            "cpu_offset": 0,
+            "bmc_offset": 1
+        },
+        "check_list":["cpu", "bmc"]
+    }
+}

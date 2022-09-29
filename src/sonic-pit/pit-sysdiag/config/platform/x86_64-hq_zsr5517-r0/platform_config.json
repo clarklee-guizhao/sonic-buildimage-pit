@@ -1,0 +1,18 @@
+{
+    "test_cases":[
+        "rtc_tc",
+        "netstress_tc",
+        "pciestress_tc",
+        "ssdstress_tc",
+        "memstress_tc",
+        "usbstress_tc",
+        "biosme_tc",
+        "svid_tc",
+        "cpu2external",
+        "bmc2cpu",
+        "dac_pin_tc",
+        "optical_pin_tc",
+        "snake_tc",
+        "bmcupgrade_tc"
+    ]
+}

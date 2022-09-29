@@ -1,0 +1,119 @@
+{
+    "software_system":{
+        "sysdiag_version":"1.1",
+        "timezone":"Asia/Shanghai",
+        "sonic_version":"SONiC.dev_202012_td4_100g.0-dirty-20220118.203718"
+    },
+    "cpld_firmware_type":["LED_CPLD1","LED_CPLD2","FAN_CPLD","SYS_CPLD"],
+    "fpga_firmware_type":["FPGA"],
+    "bios_firmware_type":["BIOS"],
+    "switch_firmware_type":["SWITCH_PCIE"],
+    "cpld_firmware_baseline":{
+        "SYS_CPLD": {
+            "absolute_path":true,
+            "file_path": "/etc/muxi/fw/8853-48cd8dq-w/components_fw/TD4_syscpld_v0b.25h.vme",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":"/etc/muxi/fw/8853-48cd8dq-w/components_fw/TD4_syscpld_v0b.25h.vme"
+        },
+        "LED_CPLD1":  {
+            "absolute_path":false,
+            "file_path": ""
+        },
+        "LED_CPLD2":  {
+            "absolute_path":false,
+            "file_path": "",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":""
+        },
+        "FAN_CPLD":  {
+            "absolute_path":false,
+            "file_path": "",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":""
+        }
+    },
+    "fpga_firmware_baseline":{
+        "FPGA":  {
+            "absolute_path":false,
+            "file_path": "",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":""
+        }
+    },
+    "bios_firmware_baseline":{
+        "FPGA":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": "",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":"",
+            "slave_version":""
+        }
+    },
+    "switch_firmware_baseline":{
+        "SWITCH_PCIE":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": ""
+        }
+    },
+    "cpld_firmware_test":{
+        "SYS_CPLD": {
+            "absolute_path":true,
+            "file_path": "/etc/muxi/fw/8853-48cd8dq-w/components_fw/TD4_syscpld_v0b.25h.vme",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":"/etc/muxi/fw/8853-48cd8dq-w/components_fw/TD4_syscpld_v0b.25h.vme"
+        },
+        "LED_CPLD1":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": ""
+        },
+        "LED_CPLD2":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": ""
+        },
+        "FAN_CPLD":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": ""
+        }
+    },
+    "fpga_firmware_test":{
+        "FPGA":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": "",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":"",
+            "slave_version":""
+        }
+    },
+    "bios_firmware_test":{
+        "FPGA":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": "",
+            "slave_upgrade":false,
+            "same_with_master":false,
+            "slave_file_path":"",
+            "slave_version":""
+        }
+    },
+    "switch_firmware_test":{
+        "SWITCH_PCIE":  {
+            "absolute_path":false,
+            "file_path": "",
+            "version": ""
+        }
+    }
+
+}

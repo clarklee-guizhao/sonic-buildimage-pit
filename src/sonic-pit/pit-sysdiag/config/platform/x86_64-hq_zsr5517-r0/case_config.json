@@ -1,0 +1,161 @@
+{
+    "asic": "centec",
+    "arch": "arm64",
+    "cpu_info": {
+        "model_cmd": "cat /proc/cpuinfo",
+        "cores_cmd": "cat /proc/cpuinfo | grep \"cpu cores\" | wc -l",
+        "MHz_cmd": "cat /proc/cpuinfo | grep \"cpu MHz\" | awk '{print $4}'",
+        "pattern": "model name\\s*:(\\s*.*)",
+        "model_name": "Intel(R) Xeon(R) CPU D-1627 @ 2.90GHz",
+        "CPU(s)": "8",
+        "cpu_MHz": "2.90GHz"
+    },
+
+    "memstress_info":{
+        "mem_test_count": "1",
+        "mem_run_size_percentage": "90%",
+        "memstress_test_time": 1
+    },
+
+
+    "rtc_info":{
+        "delay_time": 5,
+        "max_time_diff": 1
+    },
+    "net_info":{
+        "link_speed": "1000Mb/s",
+        "cpu_remote_ip": "10.105.72.170",
+        "ip_pattern": "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",
+        "loss_pattern":"\\s+0%\\s+packet\\s+loss",
+        "bmc_usb0_ip": "10.105.72.43",
+        "bmc_username": "root",
+        "bmc_password": "0penBmc"
+    },
+    "optical_info":{
+        "optical_type":"QSFP",
+        "QSFP":{
+            "optical_port":["200G","400G"],
+            "total_portnum":32,
+            "200G":{
+                "port_num":[0,24],
+                "Identifier":["QSFP-DD Double Density 8X Pluggable Transceiver","QSFP28 or later"],
+                "Vendor_Name":["PA02QMA01-SD-R","LEONI"],
+                "Vendor_PN_len":[5,30],
+                "Vendor_SN_len":[5,30]
+            },
+            "400G":{
+                "port_num":[24,32],
+                "Identifier":["QSFP-DD Double Density 8X Pluggable Transceiver"],
+                "Vendor_Name":["LUXSHARE-ICT","Amphenol"],
+                "Vendor_Part_Number_len":[5,30],
+                "Vendor_Serial_Number_len":[5,30]
+            }
+        },
+        "SFP":{
+            "200G":{},
+            "400G":{}
+        }
+    },
+    "dac_info":{
+        "dac_type":"QSFP",
+        "QSFP":{
+            "dac_port":["200G","400G"],
+            "total_portnum":32,
+            "200G":{
+                "port_num":[0,24],
+                "Identifier":["QSFP28 or later"],
+                "Vendor_Name":["LUXSHARE-TECH","Amphenol"],
+                "Vendor_PN_len":[5,30],
+                "Vendor_SN_len":[5,30]
+            },
+            "400G":{
+                "port_num":[24,32],
+                "Identifier":["QSFP-DD Double Density 8X Pluggable Transceiver"],
+                "Vendor_Name":["Molex"],
+                "Vendor_Part_Number_len":[5,30],
+                "Vendor_Serial_Number_len":[5,30]
+            }
+        },
+        "SFP":{
+            "200G":{},
+            "400G":{}
+        }
+
+    },
+    "netstress_info":{
+        "environment" : ["external", "bmc"],
+        "external_ip": "10.105.72.170",
+        "external_password": " ",
+        "bmc_password": "0penBmc",
+        "external_name": "wangmingyu",
+        "duration_value": "600",
+        "bmc_name": "root",
+        "bmc_ip": "10.105.72.43",
+        "net_stress_count": 1,
+        "net_stress_timeout": "610",
+        "net_standard_speed" : 50
+    },
+    "bmcupgrade_info": {
+        "ip":"10.105.72.43",
+        "flash_path":"/home/wmy/flash-s3ip",
+        "version_test":"0.04.00",
+        "bmc_pattern":"([0-9]+.[0-9]+.[0-9]+)"
+    },
+
+    "ssdstress_info":
+    {
+        "dev_path": "/stress.txt",
+        "rw_mode": "randread",
+        "io_size": "4k",
+        "num_jobs": "1",
+        "iop_pattern" : "iops=([0-9]+)",
+        "dev_pattern" : "/dev/sda3",
+        "ssd_run_size_percentage": "95%",
+        "iops_value_standard": "3000",
+        "ssd_test_count": 1,
+        "total_ssd_value": "32G"
+    },
+    "usbstress_info":{
+        "stress_test_time": 1
+    },
+    "pcie":{
+        "X552":{
+            "width":"x1",
+            "speed":"2.5GT/s",
+            "num":4
+            }
+    },
+    "fpga":{ 
+        "FPGA1":{
+            "num":1            
+        }
+    },
+    "pciestress_info":{
+        "stress_test_time": 1
+    },
+    "svid_info":{
+        "high_voltage": 0.9,
+        "low_voltage": 0.7,
+        "normal_voltage": 0.8       
+    },
+    "snake_info":{
+        "sdk_path" : "/home/admin/5517_999_HSDK_0.07.00_20211210_S3IP",
+        "log_path" : "/var/log/sdk_rsh.log",
+        "tx_pkt_title" : "XLMIB_TPKT",
+        "rx_pkt_title" : "XLMIB_RPKT",
+        "package_type" :[
+            {
+                "size"  : 512,
+                "count" : 3200
+            },
+            {
+                "size"  : 512,
+                "count" : 6400
+            },
+            {
+                "size"  : 512,
+                "count" : 9600
+            }
+        ]
+    }
+}

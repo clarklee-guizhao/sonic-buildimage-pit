@@ -1,0 +1,6 @@
+{
+    "test_cases": [
+        "mac_address_tc",
+        "firmware_version_tc"
+    ]
+}

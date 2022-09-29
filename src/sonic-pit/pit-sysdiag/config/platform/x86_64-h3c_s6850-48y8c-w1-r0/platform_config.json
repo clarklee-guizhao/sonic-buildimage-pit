@@ -1,0 +1,6 @@
+{
+    "test_cases":[
+        "eeprom_tc",
+        "tlv_eeprom_set_tc"
+    ]
+}
